@@ -25,11 +25,13 @@ def hbnb():
     """Displays 'HBNB'."""
     return "HBNB"
 
+
 @app.route("/c/<text>", strict_slashes=False)
 def c_text:
     """Displays 'C' followed by the value of <text>."""
     text = text.replace("_", " ")
     return "C {}".format(text)
+
 
 @app.route("/python/<text>", strict_slashes=False)
 def python_text:

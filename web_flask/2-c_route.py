@@ -23,6 +23,7 @@ def hbnb():
     """Displays 'HBNB'."""
     return "HBNB"
 
+
 @app.route("/c/<text>", strict_slashes=False)
 def c_text:
     """Displays 'C' followed by the value of <text>."""
@@ -32,4 +33,3 @@ def c_text:
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
-
