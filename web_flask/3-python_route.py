@@ -27,14 +27,14 @@ def hbnb():
 
 
 @app.route("/c/<text>", strict_slashes=False)
-def c_text:
+def c_text(text):
     """Displays 'C' followed by the value of <text>."""
     text = text.replace("_", " ")
     return "C {}".format(text)
 
 
 @app.route("/python/<text>", strict_slashes=False)
-def python_text:
+def python_text(text):
     """Displays 'Python' followed by the value of <text>."""
     text = text.replace("_", " ")
 
