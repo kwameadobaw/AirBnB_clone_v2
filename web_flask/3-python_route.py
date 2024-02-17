@@ -37,6 +37,7 @@ def c_text(text):
 def python_text(text):
     """Displays 'Python' followed by the value of <text>."""
     text = text.replace("_", " ")
+    return "Python {}".format(text)
 
 
 if __name__ == "__main__":
