@@ -68,7 +68,7 @@ def number_odd_or_even(n):
 
     States whether <n> is odd or even in the body.
     """
-    return render_template("6-number_odd_or_even.html")
+    return render_template("6-number_odd_or_even.html", n=n)
 
 
 if __name__ == "__main__":
